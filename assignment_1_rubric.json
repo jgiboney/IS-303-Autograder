@@ -1,0 +1,119 @@
+{
+    "Problem naming": {
+      "BMI calculator": ["bmi.py", "bmi_calculator.py", "bmi_calc.py", "bmicalculator.py", "bmicalc.py"],
+      "Amusement park tickets": ["amusement_park_tickets.py", "amusement_park.py", "amusement_park_ticket.py", "amusementparktickets.py", "amusementparkticket.py", "amusementpark.py", "amusmentpark.py", "amusementparktix.py"],
+      "Fuel cost splitter": ["fuel_cost_splitter.py", "fuel_cost.py", "fuelcostsplitter.py", "fuelcost.py"],
+      "Number guessing game": ["number_guessing_game.py", "number_guessing.py", "numberguessinggame.py", "numberguessing.py", "numberguess.py", "guessing_game.py", "guessinggame.py", "num_guessing.py", "numguessing.py"],
+      "Password strength calculator": ["password_strength_calculator.py", "password_strength.py", "passwordstrengthcalculator.py", "passwordstrength.py", "passwordscore.py"],
+      "ASCII art": ["ascii_art.py", "asciiart.py", "ascii_art.py"],
+      "Survey analyzer": ["survey_analyzer.py", "surveyanalyzer.py", "survey_analyze.py", "surveyanalyze.py", "dataanalytics.py", "data_analytics.py"]
+    },
+    "Points for submission": 1.0,
+    "Problem specific rubrics": {
+      "BMI calculator": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*calculate(.|\n)*bmi(.|\n)*inputs","#(.)*calculate(.|\n)*bmi"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "Justin\nGiboney\n5\n9\n180"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "justin giboney has a bmi of 26.?\\d+ and .* overweight"
+        ],
+        "Points per check": 4
+      },
+      "Amusement park tickets": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*calculate(.|\n)*ticket(.|\n)*price(.|\n)*inputs?"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "40\nno\nyes"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "final price: \\$18"
+        ],
+        "Points per check": 4
+      },
+      "Fuel cost splitter": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*split(.|\n)*fuel(.|\n)*inputs?","#(.)*split fuel costs(.|\n)*# inputs"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "100\n12\n4.50\n3"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "cost per person: \\$12.5"
+        ],
+        "Points per check": 4
+      },
+      "Number guessing game": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*guess(.|\n)*game(.|\n)*inputs?"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "11"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "too high"
+        ],
+        "Points per check": 4
+      },
+      "Password strength calculator": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*(scores|strength)(.|\n)*password(.|\n)*inputs?","#(.)*(score|strength)(.|\n)*password(.|\n)*# inputs"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "password"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "302231454903657293676544(.|\n)*478214327379.2046(.|\n)*239107163689.6023"
+        ],
+        "Points per check": 4
+      },
+      "ASCII art": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*ascii(.|\n)*art(.|\n)*inputs?"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "4"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "|__|"
+        ],
+        "Points per check": 4
+      },
+      "Survey analyzer": {
+        "Content checks": [
+          {"field": "Assignment description", "regexes": ["'''(.|\n)*calculate(.|\n)*mean(.|\n)*inputs?"], "points": 2},
+          {"field": "Specify inputs, processes, and outputs", "regexes": ["'''(.|\n)*inputs?(.|\n)*process(es)?(.|\n)*outputs?(.|\n)*'''", "(.|\n)*inputs(.|\n)*processes(.|\n)*outputs(.|\n)*\"\"\""], "points": 2}
+        ],
+        "Simulated inputs": [
+          "6\n5\n4\n3\n2\n1\n1\n2\n3\n4"
+        ],
+        "Variable checks": [
+        ],
+        "Expected outputs": [
+          "mean: 3.1\nmin: 1\nmax: 6\nstandard deviation: 1.66"
+        ],
+        "Points per check": 4
+      }
+    }
+  }
